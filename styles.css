@@ -147,6 +147,7 @@ body {
 .background-story {
   display: flex;
   grid-column: 2 / span 3;
+  grid-row: 1;
   word-wrap: break-word;
   font-size: 2rem;
   font-weight: 500;
@@ -164,17 +165,17 @@ body {
   text-align: center;
 }
 
-.factoid1 {
+#factoid1 {
   grid-column: 2;
   grid-row: 2;
 }
 
-.factoid2 {
+#factoid2 {
   grid-column: 3;
   grid-row: 2;
 }
 
-.factoid3 {
+#factoid3 {
   grid-column: 4;
   grid-row: 2;
 }
