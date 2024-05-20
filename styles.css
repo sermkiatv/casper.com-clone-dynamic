@@ -5,7 +5,7 @@
 
 html, body {
   
-  font-family: "Montserrat", sans-serif;
+  font-family: "Belleza", "Archivo Black", "Freeman", "Montserrat", sans-serif;
   font-optical-sizing: auto;;
   color: white;
 }
@@ -133,83 +133,46 @@ body {
   object-fit: cover;
 }
 
-/* TODO: Use repeat() */
-
 .history-factoids {
-  display: grid;
-  grid-template-columns: 1fr 270px 270px 270px 1fr;
-  grid-template-rows: auto auto;
-  align-items: center;
-  justify-items: center;
-  color: #1e306e;
-}
-
-.background-story {
-  grid-column: 2 / span 3;
-  grid-row: 1;
-  display: flex;
-  padding: 30px;
-  font-size: 2rem;
-  font-weight: 500;
-  text-align: center;
-  word-wrap: break-word;
-}
-
-.factoid { 
-  display: flex;
-  flex-direction: column; /* TODO: Explain this */
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#factoid1 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-#factoid2 {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-#factoid3 {
-  grid-column: 4;
-  grid-row: 2;
-}
-
-.history-factoids2 {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: auto auto;
   align-items: center;
   justify-items: center;
   color: #1e306e;
+  background-color: #f7fafc;
 }
 
 .middle-columns {
   display: grid;
-  grid-template-columns: 270px 270px 270px;
+  grid-template-columns: repeat(3, 270px);
   min-width: 810px;
 }
 
 .large-text {
   grid-row: 1;
   grid-column: 1 / span 3;
-  padding: 30px;
+  padding: 40px;
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
   word-wrap: break-word;
 }
 
-.factoidx {
+.factoid {
   grid-row: 2;
   display: flex;
-  flex-direction: column; /* TODO: Explain this */
+  flex-direction: column; /* flex container places items from left to right by default */
+                          /* 'column' changes the direction to top to bottom */
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-bottom: 60px;
+  font-weight: 500;
+}
+
+.factoid-icon {
+  height: 88px;
 }
 
 .middle-columns {
@@ -222,4 +185,31 @@ body {
   .middle-columns {
     grid-template-columns: repeat(3, 240px);
   }
+}
+
+.headline-hero {
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  align-items: center;
+  justify-self: center;
+  padding: 40px;
+}
+
+.hero-headline-component {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 0px;
+  color: rgb(21, 21, 21);
+}
+
+
+
+.hero-text-component {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  color: rgb(21, 21, 21);
 }
