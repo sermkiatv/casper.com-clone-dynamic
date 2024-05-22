@@ -226,19 +226,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 500px; /* Adjust as needed */
+  height: 750px; /* Adjust as needed */
   padding: 0 30px;
   text-align: center;
   max-width: 374px;
 }
 
+.product-card h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(21, 21, 21);
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  margin-bottom: 20px;
+}
+
 .perk {
-  background-color: lightgray;
+  background-color: lightblue;
   border-radius: 10px;
-  padding: 5px;
+  padding: 5px 10px;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 1px;
 }
 
 .product-name {
@@ -254,19 +269,43 @@ body {
 
 .product-image {
   border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .features {
-  list-style: none;
+  list-style-type: none;
   color: rgb(21, 21, 21);
   text-align: left;
+  font-weight: 100;
+  font-size: 1em;
+  height: 256px;
+  overflow: hidden;
  /* align-items: left; */
  /* align-self: flex-start;*/
 }
 
-.bullet-icon {
+
+.features li {
+  margin-bottom: 10px;
+}
+
+/*.bullet-icon {
   height: 20px;
   width: 20px;
+}*/
+
+.bullet-tick {
+  list-style-image: url('./assets/images/Tick.svg');
+}
+
+.bullet-snow {
+  list-style-image: url('./assets/images/Cool.svg');
+  vertical-align: middle;
+  /*list-style-type: none; 
+  padding-left: 30px; 
+  background: url('./assets/images/Cool.svg') no-repeat left center; 
+  background-size: 20px 20px; */
 }
 
 .purchase-button {
@@ -278,11 +317,18 @@ body {
   text-align: center;
   /*align-self: flex-start;*/
   margin: auto;
+  font-size: 1em;
+  font-family: "Belleza", "Archivo Black", "Freeman", "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 
 .price {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust as needed */
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 .discounted-price {
@@ -291,4 +337,36 @@ body {
 
 .full-price {
   text-decoration: line-through;
+}
+
+.shop-all-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.shop-all-button {
+  background-color: white;
+  color: darkblue;
+  border: 1px solid darkblue; /* Add this line to create a border */
+  border-radius: 25px; /* Adjust as needed */
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Belleza", "Archivo Black", "Freeman", "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  box-shadow: none;
+}
+
+.whats-included {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  color: #1e306e;
+  background-color: #f7fafc;
 }
