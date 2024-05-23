@@ -63,7 +63,7 @@ body {
   color: #1e306e;
   padding: 10px 20px;
   height: 56px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .navbar a {
@@ -95,6 +95,10 @@ body {
 
 .navigation li {
   margin-right: 20px; /* Add spacing between navigation links */
+}
+
+.navigation .hightlighted-category {
+  color: #CB372A;
 }
 
 .shopping-cart {
