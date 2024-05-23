@@ -137,15 +137,21 @@ body {
 
 .history-factoids {
   display: grid;
-  grid-template-columns: 1fr 270px 270px 270px 1fr;
-  grid-template-rows: auto auto;
-  align-items: center;
-  justify-items: center;
-  color: #1e306e;
+  grid-template-columns: 1fr 270px 270px 270px 1fr; /* 5 columns. 1fr = 1 fraction of the available space */
+  grid-template-rows: auto auto; /* 2 rows. Height is determined by content. */
+  align-items: center; /* Align items vertically */
+  justify-items: center; /* Align items horizontally */
+  color: #1e306e; /* The text color applies to the <p> elements in .background-story and each .factoid */
+  border: 1px solid #1e306e; /*- ADDED FOR VISUALIZATION -*/
 }
 
 .background-story {
   grid-column: 2 / span 3;
+  /*
+          |  1  |  2  |  3  |  4  |  5  |
+  (Row 1) |     |   [BACKGROUND]  |     |
+  (Row 2) |     | FT1 | FT2 | FT3 |     |
+  */
   grid-row: 1;
   display: flex;
   padding: 30px;
@@ -155,15 +161,38 @@ body {
   word-wrap: break-word;
 }
 
-.factoid { 
+.factoid { /* Using class to target all factoids */
   display: flex;
-  flex-direction: column; /* TODO: Explain this */
-  align-items: center;
+  flex-direction: column; /* Stack the elements vertically */
+
+  align-items: center; /* When an item is text, this will align the whole block of text */
+                       /* to the center of the column, but the text will not be centered */
+                       /* horizontally within the block */
+  /* align-items without text-align ---> |---[TEXT----]---| */                  
+  /* align-items with    text-align ---> |---[--TEXT--]---| */
   justify-content: center;
-  text-align: center;
+  /*
+  flex-direction determines the main axis.
+  align-items aligns items along the cross axis.
+  justify-content aligns items along the main axis.
+  So, if flex-direction is column:
+
+  The main axis runs vertically (top to bottom).
+  align-items will align items horizontally (left, center, right).
+  justify-content will align items vertically (top, center, bottom).
+  If flex-direction is row:
+
+  The main axis runs horizontally (left to right).
+  align-items will align items vertically (top, center, bottom).
+  justify-content will align items horizontally (left, center, right).
+
+  */
+  text-align: center; /* This attribute is inherited by child elements */
+                      /* so it's not necessary to apply it at the level of <p> element */
 }
 
-#factoid1 {
+#factoid1 { /* Using IDs to target specific factoids */
+            /* Because the location of the factoids is fixed */
   grid-column: 2;
   grid-row: 2;
 }
@@ -176,7 +205,9 @@ body {
 #factoid3 {
   grid-column: 4;
   grid-row: 2;
-}
+} 
+
+/*--------------------------------------------*/
 
 .history-factoids2 {
   display: grid;
@@ -185,6 +216,7 @@ body {
   align-items: center;
   justify-items: center;
   color: #1e306e;
+  border: 1px solid #1e306e;
 }
 
 .middle-columns {
