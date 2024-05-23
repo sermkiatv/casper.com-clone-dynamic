@@ -424,3 +424,47 @@ body {
   font-weight: 100;
   padding: 40px;
 }
+
+/* 10, 32, 101 */
+.catergory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  width: 100vw;
+  max-width: 1500px;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.catergory-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* TODO: Fix here! */
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  background-color: #1e306e;
+  border-radius: 10px;
+  color: white;
+}
+
+.cat-mattresses {
+  grid-column: 1;
+}
+
+.cat-pillows {
+  grid-column: 2;
+}
+
+.cat-furniture-bedding {
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+}
