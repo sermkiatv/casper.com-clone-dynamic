@@ -436,6 +436,7 @@ body {
   align-items: center;
   justify-self: center;
   margin: 0 auto;
+  height: 50vh; 
 }
 
 .catergory-grid img {
@@ -450,7 +451,7 @@ body {
   align-items: start;
   justify-content: start;
   padding: 20px;
-  background-color: #1e306e;
+  background-color: rgb(10, 32, 101);
   border-radius: 10px;
   color: white;
 }
@@ -467,4 +468,10 @@ body {
   grid-column: 3;
   display: flex;
   flex-direction: column;
+}
+
+.cat-mattresses,
+.cat-pillows,
+.cat-furniture-bedding {
+  height: 100%; /* Add this line */
 }
