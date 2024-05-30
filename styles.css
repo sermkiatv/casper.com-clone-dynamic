@@ -561,3 +561,65 @@ body {
 .cat-furniture-bedding {
   height: 100%; /* Add this line */
 }
+
+.testimony-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(245, 247, 252);
+  color: rgb(10, 32, 101);
+  align-items: center;
+  width: 100%;
+}
+
+.testimony-heading {
+  text-align: center;
+}
+
+.testimony-heading h2 {
+  font-size: 3rem;
+}
+
+.testimony-body {
+  display: grid;
+  grid-template-columns: 1fr 1280px 1fr;
+  width: 1280px;
+  border: 1px solid red;
+}
+
+.testimony-nav-left {
+  grid-column: 1;
+  border: 5px solid blue;
+}
+
+.testimony-container {
+  grid-column: 2;
+  border: 1px solid green;
+}
+
+.testimony-nav-right {
+  grid-column: 3;
+  border: 5px solid black;
+}
+
+/*.text-section, .image-section {
+  width: 50%;
+} */
+
+.nav-button {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.dots {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}

@@ -1,0 +1,1 @@
+- [ ] Section 7: Add media query when screen width shrinks.
