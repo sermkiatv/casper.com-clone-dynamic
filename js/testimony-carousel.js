@@ -1,5 +1,5 @@
 let currentTestimony = 0;
-const testimonies = document.querySelectorAll('.testimony');
+const testimonies = document.querySelectorAll('.testimony-container');
 const dots = document.querySelectorAll('.dot');
 
 document.querySelector('.prev').addEventListener('click', () => {

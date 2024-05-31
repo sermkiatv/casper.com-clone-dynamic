@@ -14,7 +14,17 @@
   </style>
 </head>
 <body>
-  <script src="./js/testimony-carousel.js"></script>
+  <!-- <script src="./js/testimony-carousel.js"></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Select the first .testimony-container element
+    var firstTestimonyContainer = document.querySelector('.testimony-container');
+
+    // Log the element to the console
+    console.log(firstTestimonyContainer);
+    //firstTestimonyContainer.style.display = 'block';
+  });
+  </script>
   <header class="top-bar">
     <div class="top-left-column">
       <img src="./assets/images/refer-a-friend.svg" alt="Refer a friend" />
@@ -208,39 +218,79 @@
         <div class="testimony-nav-left">
           <button class="nav-button prev">&#60;</button>
         </div>
+
         <div class="testimony-container">
-          <div class="text-section">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>
-              " Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
-            </p>
-            <div class="user-info">
-              <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
-              <div class="user-name">
-                <p>Kevin</p>
-                <p>Denver, CO</p>
+          <div class="testimony">
+            <div class="text-section">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h2>
+                " *** 1 *** Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
+              </h2>
+              <div class="user-info">
+                <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
+                <div class="user-name">
+                  <p>Kevin</p>
+                  <p>Denver, CO</p>
+                </div>
+              </div>
+              <div class="dots">
+                <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
               </div>
             </div>
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+            <div class="image-section">
+              <img src="./assets/images/Snow_Max_Review.jpg" alt="Snow Max Review">
+              <p>Snow Max</p>
             </div>
-          </div>
-          <div class="image-section">
-            <img src="./assets/images/Snow_Max_Review.jpg" alt="Snow Max Review">
-            <p>Snow Max</p>
-          </div>
-          
+          </div>  
         </div>
+
+        <div class="testimony-container">
+          <div class="testimony">
+            <div class="text-section">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h2>
+                " Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
+              </h2>
+              <div class="user-info">
+                <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
+                <div class="user-name">
+                  <p>Kevin</p>
+                  <p>Denver, CO</p>
+                </div>
+              </div>
+              <div class="dots">
+                <span class="dot"></span>
+              <span class="dot"></span>
+              <!-- <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span> -->
+              </div>
+            </div>
+            <div class="image-section">
+              <img src="./assets/images/Snow_Max_Review.jpg" alt="Snow Max Review">
+              <p>Snow Max</p>
+            </div>
+          </div>  
+        </div>
+
+
+
         <div class="testimony-nav-right">
           <button class="nav-button next">&#62;</button>
         </div>
