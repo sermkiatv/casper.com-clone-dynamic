@@ -4,7 +4,6 @@
 }
 
 html, body {
-  
   font-family: "Belleza", "Archivo Black", "Freeman", "Montserrat", sans-serif;
   font-optical-sizing: auto;;
   color: white;
@@ -737,6 +736,10 @@ body {
   margin-right: 10px;
 }
 
+.customer-experience-section {
+  margin-bottom: 60px;
+}
+
 .customer-experience-grid {
   display: flex;
   justify-content: space-between;
@@ -807,5 +810,66 @@ body {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+.financing-options-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(245, 247, 252);
+  color: rgb(10, 32, 101);;
+  padding: 40px;
+}
+
+.financing-options-heading {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+
+.financing-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 840px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.financing-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: rgb(10, 32, 101);
+  border-radius: 10px;
+}
+
+.financing-option img {
+
+  height: 90px;
+  width: auto;
+  padding: 20;
+}
+
+.financing-option p {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+.explore-options-button {
+  display: block;
+  margin: 20px auto; /* Adjust as needed */
+  background-color: rgb(10, 32, 101);
+  color: white;
+
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-family: Belleza, "Archivo Black", "Freeman", "Montserrat", sans-serif;
 }
 
