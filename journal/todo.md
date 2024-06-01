@@ -10,3 +10,6 @@
 - [ ] Section 9: Change mouse cursor when hover.
 - [ ] Section 9: Add prev and next button in modal.
 - [ ] Section 9: Add 'Shop now' button in modal.
+- [ ] General: Try to understand flex: 1; flex-grow, flex-shrink, flex-basis
+- [ ] Various: Text color gray on some texts
+- [ ] Section 11: Add 'Find your store' button & text.

@@ -858,6 +858,7 @@ body {
   font-size: 0.9rem;
   line-height: 1.4rem;
   text-align: center;
+  color: rgb(135, 135, 135);
 }
 
 .explore-options-button {
@@ -873,3 +874,64 @@ body {
   font-family: Belleza, "Archivo Black", "Freeman", "Montserrat", sans-serif;
 }
 
+.talk-to-specialists-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(10, 32, 101);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.talk-to-specialists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1280px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.talk-to-specialist {
+  display: block;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.talk-to-specialist img {
+  display: block;
+  margin: 0 auto;
+}
+
+.talk-to-specialist h4 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(10, 32, 101);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.talk-to-specialist p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: rgb(135, 135, 135);
+}
+
+.talk-to-specialist .contact-channel {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+.talk-to-specialists-footer {
+  display: block;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.talk-to-specialists-footer img {
+
+  width: 100%;
+  height: auto;
+
+}
