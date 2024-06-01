@@ -5,5 +5,8 @@
 - [ ] Section 8: [Improvement] Use frameworks or libraries for testimony carousels. (Bootstrap, Slick, Swiper, Owl Carousel, Flickity)
 - [ ] Section 8: Zooming effect on image + Shop now > button.
 - [ ] Section 8: Hiding button. Show when hover.
-- [ ] Section 8: Change images on 2-5
-- [ ] Section 9: Add video time
+- [X] Section 8: Change images on 2-5.
+- [X] Section 9: Add video time.
+- [ ] Section 9: Change mouse cursor when hover.
+- [ ] Section 9: Add prev and next button in modal.
+- [ ] Section 9: Add 'Shop now' button in modal.
