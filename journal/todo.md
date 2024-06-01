@@ -1,5 +1,7 @@
 - [ ] Section 7: Add media query when screen width shrinks.
 - [ ] Section 8: Rename <div> elements.
-- [ ] Section 8: Create <div> for stars, text, navigation dots.
-- [ ] Section 8: Edit testimony-carousel.js.
+- [X] Section 8: Create <div> for stars, text, navigation dots.
+- [X] Section 8: Edit testimony-carousel.js.
 - [ ] Section 8: [Improvement] Use frameworks or libraries for testimony carousels. (Bootstrap, Slick, Swiper, Owl Carousel, Flickity)
+- [ ] Section 8: Zooming effect on image
+- [ ] Section 8: Hiding button. Show when hover.
