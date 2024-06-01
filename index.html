@@ -25,6 +25,7 @@
     });
   </script>
   <script src="./js/testimony-carousel.js"></script>
+  <script src="./js/playVideo.js"></script>
   
   
   <header class="top-bar">
@@ -233,7 +234,7 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <h2>
-                  " *** 1 *** Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
+                  " Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
                 </h2>
                 <div class="user-info">
                   <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
@@ -262,13 +263,13 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <h2>
-                  " *** 2 *** Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
+                  " Highest quality, great design. "
                 </h2>
                 <div class="user-info">
                   <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
                   <div class="user-name">
-                    <p>Kevin</p>
-                    <p>Denver, CO</p>
+                    <p>Jess</p>
+                    <p>Austin, TX</p>
                   </div>
                 </div>
                 
@@ -292,13 +293,13 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <h2>
-                  " *** 3 *** Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
+                  " It fits my preferences perfectly as the bed does not sink too much or feel too firm like other mattresses I've had before. "                  
                 </h2>
                 <div class="user-info">
                   <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
                   <div class="user-name">
-                    <p>Kevin</p>
-                    <p>Denver, CO</p>
+                    <p>Angela</p>
+                    <p>Richmond, VA</p>
                   </div>
                 </div>
               </div>
@@ -320,13 +321,13 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <h2>
-                  " *** 4 *** Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
+                  " I can’t wait to go to sleep tonight. I want to call into work and shut myself in my room. "                  
                 </h2>
                 <div class="user-info">
                   <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
                   <div class="user-name">
-                    <p>Kevin</p>
-                    <p>Denver, CO</p>
+                    <p>Cindy</p>
+                    <p>New York, New York</p>
                   </div>
                 </div>
                 
@@ -349,13 +350,13 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <h2>
-                  " *** 5 *** Deserves a standing ovation…Best sleep I’ve had in 40 yrs. This is the first time I’ve actually slept through the night in REM sleep... "
+                  " I actually had to hunt down the AirBNB we stayed at to find this mattress. We had tried 3 others and they couldn't compete...I'd pay double for this bed. "                  
                 </h2>
                 <div class="user-info">
                   <img src="./assets/images/Male_Character.svg" alt="Profile Picture">
                   <div class="user-name">
-                    <p>Kevin</p>
-                    <p>Denver, CO</p>
+                    <p>Karie</p>
+                    <p>Port Charlotte, Florida</p>
                   </div>
                 </div>
                 
@@ -383,11 +384,40 @@
       </div>
     </div>
   </section>
+  <section id="sec-customer-experience">
+    <div class="customer-experience-section">
+      <div class="customer-experience-heading">
+        <h2>Experience Casper in person</h2>
+      </div>
+      <div class="customer-experience-grid">
+        <div class="video-thumbnail" data-src="./assets/videos/customer-exp-video-1.mp4">
+          <video id="video1" width="100%" height="auto" src="./assets/videos/customer-exp-video-1.mp4" autoplay muted loop></video>
+          <div class="video-duration">00:55</div>
+        </div>
+        <div class="video-thumbnail" data-src="./assets/videos/customer-exp-video-2.mp4">
+          <video id="video2" width="100%" height="auto" src="./assets/videos/customer-exp-video-2.mp4" autoplay muted loop></video>
+          <div class="video-duration">00:22</div>
+        </div>
+        <div class="video-thumbnail" data-src="./assets/videos/customer-exp-video-3.mp4">
+          <video id="video3" width="100%" height="auto" src="./assets/videos/customer-exp-video-3.mp4" autoplay muted loop></video>
+          <div class="video-duration">00:27</div>
+        </div>
+        <div class="video-thumbnail" data-src="./assets/videos/customer-exp-video-4.mp4">
+          <video id="video4" width="100%" height="auto" src="./assets/videos/customer-exp-video-4.mp4" autoplay muted loop></video>
+          <div class="video-duration">00:34</div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section>
     <div style="display:flex; align-items:center; justify-content: center;">
       <div style="font-size: 30rem; text-align: center; color:blue">TEST</div>
     </div>
   </section>
   </main>
+  <div id="videoModal" class="modal">
+    <span class="close">&times;</span>
+    <video id="modalVideo" width="100%" height="auto" ></video>
+  </div>
 </body>
 </html>

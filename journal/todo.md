@@ -3,5 +3,7 @@
 - [X] Section 8: Create <div> for stars, text, navigation dots.
 - [X] Section 8: Edit testimony-carousel.js.
 - [ ] Section 8: [Improvement] Use frameworks or libraries for testimony carousels. (Bootstrap, Slick, Swiper, Owl Carousel, Flickity)
-- [ ] Section 8: Zooming effect on image
+- [ ] Section 8: Zooming effect on image + Shop now > button.
 - [ ] Section 8: Hiding button. Show when hover.
+- [ ] Section 8: Change images on 2-5
+- [ ] Section 9: Add video time
