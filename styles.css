@@ -891,6 +891,10 @@ body {
   margin: 0 auto;
 }
 
+.talk-to-specialists-section {
+  padding-bottom: 70px;
+}
+
 .talk-to-specialist {
   display: block;
   padding-left: 50px;
@@ -934,4 +938,96 @@ body {
   width: 100%;
   height: auto;
 
+}
+
+.footer-section {
+  display: block;
+  background-color: rgb(10, 32, 101);
+  color: white;
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  padding-top: 0;
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: none;
+  flex-grow: 0;
+  flex-shrink: 1; /* ALLOWING THE LEFT CONTAINER TO SHRINK SO THAT THE COLUMNS IN IT WRAP" */
+  flex-basis: auto;
+}
+
+.footer-middle {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 0;
+  width: 150px;
+}
+
+.footer-right {
+ width: 425px;
+ padding-top: 30px;
+}
+
+.map-column {
+  /*flex: 1 1 0;*/
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 200px;
+  line-height: 1.8rem;
+  padding-top: 20px;
+}
+
+.map-column h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.input-button-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  height: 60px;
+  width: 100%;
+  border: 2px solid rgb(29, 91, 153);
+
+}
+
+.email-description {
+  padding-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.email-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-family: "Belleza", "Archivo Black", "Freeman", "Montserrat", sans-serif;
+  padding: 0 20px;
+  font-size: 1rem;
+  
+}
+
+.submit-button {
+  height: 100%;
+  background-color: rgb(207, 231, 245);
+  color: rgb(10, 32, 101);
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  padding: 0;
+  cursor: pointer;
+  width: 150px;
+  font-size: 1rem;
+  font-family: "Belleza", "Archivo Black", "Freeman", "Montserrat", sans-serif;
 }
