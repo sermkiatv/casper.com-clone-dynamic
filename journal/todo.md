@@ -13,3 +13,4 @@
 - [ ] General: Try to understand flex: 1; flex-grow, flex-shrink, flex-basis
 - [ ] Various: Text color gray on some texts
 - [ ] Section 11: Add 'Find your store' button & text.
+- [ ] Section 12: Changed mouse cursor to finger when hovering over social icons
