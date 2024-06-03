@@ -1,0 +1,26 @@
+# Node modules
+/node_modules
+
+# Python virtual environment
+/venv
+
+# React build directory
+/build
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Sensitive information
+.env
+
+# IDE configuration files
+.vscode
+.idea
+
+# Python compiled files
+*.pyc
+__pycache__
+
+# Database files
+*.db
