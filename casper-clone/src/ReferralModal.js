@@ -1,6 +1,6 @@
 // ReferralModal.js
 import React, { useState } from 'react';
-import { Modal, Button, Form } from 'react-bootstrap';
+import { Container, Row, Col,Modal, Button, Form } from 'react-bootstrap';
 import { ReactComponent as ReferAFriend } from './assets/images/refer-a-friend.svg';
 import ReferralBackgroundImage from './assets/images/mobile-mattress.jpg'; // Update with the path to your image
 import './ReferralModal.css';
@@ -19,7 +19,8 @@ return (
 
     <Modal show={show} onHide={handleClose} size="lg" centered>
       <Modal.Body style={{
-          display: 'flex',
+        display: 'flex',
+        
           width: '800px',
           height: '600px',
           padding: '0'
@@ -39,12 +40,16 @@ return (
           {/* Right column containing the form and now the title */}
           <div style={{
             flex: 1,
-            minHeight: '100%',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            // minHeight: '100%',
             width: '50%',
-            padding: '0',
+            //padding: '60px 0 0 0',
             margin: '0',
+            paddingTop: '90px',
             backgroundColor: 'rgba(230, 230, 230)',
-            textAlign: 'center'
+            textAlign: 'center',
+   
           }}>
             <button onClick={handleClose} style={{
               position: 'absolute', // Position the button absolutely
@@ -63,9 +68,10 @@ return (
             </button>
             <div style={{
             flex: 1,
-            height: '100%',
+            height: 'auto',
             width: '100%',
-            padding: '10%',
+              padding: '0 10%',
+            paddingBottom: '0',
             margin: '0',
             backgroundColor: 'rgba(230, 230, 230)',
             textAlign: 'center',
@@ -82,19 +88,41 @@ return (
                   }}>Enter your info to start sharing with friends:</Form.Label>
                   <Form.Control style={{
                     borderRadius: '2px',
-                    padding: '10px'
+                    padding: '10px',
+                    height: '40px'
                   }} className="mb-2" type="text" placeholder="What's your name?" />
                   <Form.Control style={{
                     borderRadius: '2px',
-                    padding: '10px'
-                  }} className="mb-2" type="text" placeholder="What's your email?" />
-                  <Button style={{ width: '100%', backgroundColor: 'rgb(15, 26, 84)' }} className="mt-5" type="submit">Start Sharing</Button>
+                    padding: '10px',
+                    height: '40px'
+                  }} className="mb-3" type="text" placeholder="What's your email?" />
+                  <Button style={{
+                    width: '100%',
+                    backgroundColor: 'rgb(15, 26, 84)',
+                    border: 'none',
+                    fontSize: '0.8rem',
+                    fontWeight: '700',
+                    letterSpacing: '1px',
+                    height: '40px'
+                  }} className="mt-4" type="submit" >Start Sharing</Button>
                   <p style={{ fontSize: '0.7rem', textAlign: 'center', marginTop: '2px', color: '#999999'}}>Have a question about referrals? <a href="#" style={{ color: 'rgb(15, 26, 84)' }}>Click here for help.</a></p>
                 </Form.Group>
                 {/* Continue with the rest of your form */}
               </Form>
-              </div>
+              
+            </div>
+            <Container>
+              <Row className="footer-row">
+                <Col className="text-start">
+                  Terms
+                </Col>
+                <Col className="text-end">
+                  friendbuy
+                </Col>
+              </Row>
+              </Container>
           </div>
+
         </div>
       </Modal.Body>
     </Modal>
