@@ -4,130 +4,55 @@ import { Container, Row, Col,Modal, Button, Form } from 'react-bootstrap';
 import { ReactComponent as ReferAFriend } from './assets/images/refer-a-friend.svg';
 import ReferralBackgroundImage from './assets/images/mobile-mattress.jpg'; // Update with the path to your image
 import './ReferralModal.css';
+import styles from './ReferralModal.module.css'; // Import CSS module
 
 const ReferralModal = () => {
   const [show, setShow] = useState(false);
 
-const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-return (
-  <>
-    <div style={{ cursor: 'pointer' }} onClick={handleShow}>
-      <ReferAFriend alt="Refer a friend" className="me-2" />Refer a friend
-    </div>
+  return (
+    <>
+      <div className={styles.referButton} onClick={handleShow}>
+        <ReferAFriend alt="Refer a friend" className="me-2" />Refer a friend
+      </div>
 
-    <Modal show={show} onHide={handleClose} size="lg" centered>
-      <Modal.Body style={{
-        display: 'flex',
-        
-          width: '800px',
-          height: '600px',
-          padding: '0'
-        }}>
-        <div style={{
-          display: 'flex',
-          width: '100%',
-          height: '100%',
-          backgroundImage: `url(${ReferralBackgroundImage})`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: '-155px 0',
-        }}>
-          {/* Empty left column with transparent background */}
-          <div style={{ flex: 1, backgroundColor: 'transparent' }}>
-            {/* This div is intentionally left empty */}
-          </div>
-          {/* Right column containing the form and now the title */}
-          <div style={{
-            flex: 1,
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            // minHeight: '100%',
-            width: '50%',
-            //padding: '60px 0 0 0',
-            margin: '0',
-            paddingTop: '90px',
-            backgroundColor: 'rgba(230, 230, 230)',
-            textAlign: 'center',
-   
-          }}>
-            <button onClick={handleClose} style={{
-              position: 'absolute', // Position the button absolutely
-              top: '0px', // Distance from the top
-              right: '5px', // Distance from the right
-              border: 'none', // Optional: Removes the border
-              background: 'transparent', // Optional: Makes the background transparent
-              cursor: 'pointer', // Changes the cursor on hover
-              fontSize: '32px',
-              fontWeight: '100',
-              padding: '0',
-              margin: '0',
-              lineHeight: '0.8'
-            }}>
-              &times;
-            </button>
-            <div style={{
-            flex: 1,
-            height: 'auto',
-            width: '100%',
-              padding: '0 10%',
-            paddingBottom: '0',
-            margin: '0',
-            backgroundColor: 'rgba(230, 230, 230)',
-            textAlign: 'center',
-            alignContent: 'center',
-            justifyContent: 'center'
-          }}>
-              <h1>Refer a Friend <br />to a Casper Mattress</h1>
-              <p>Start spreading the snooze. Give a friend 25% off*, and you'll get a $75 Amazon gift card when they buy.</p>
-              <Form>
-                <Form.Group controlId="formName">
-                  <Form.Label style={{
-                    fontSize: '0.7rem',
-                    fontWeight: '100'
-                  }}>Enter your info to start sharing with friends:</Form.Label>
-                  <Form.Control style={{
-                    borderRadius: '2px',
-                    padding: '10px',
-                    height: '40px'
-                  }} className="mb-2" type="text" placeholder="What's your name?" />
-                  <Form.Control style={{
-                    borderRadius: '2px',
-                    padding: '10px',
-                    height: '40px'
-                  }} className="mb-3" type="text" placeholder="What's your email?" />
-                  <Button style={{
-                    width: '100%',
-                    backgroundColor: 'rgb(15, 26, 84)',
-                    border: 'none',
-                    fontSize: '0.8rem',
-                    fontWeight: '700',
-                    letterSpacing: '1px',
-                    height: '40px'
-                  }} className="mt-4" type="submit" >Start Sharing</Button>
-                  <p style={{ fontSize: '0.7rem', textAlign: 'center', marginTop: '2px', color: '#999999'}}>Have a question about referrals? <a href="#" style={{ color: 'rgb(15, 26, 84)' }}>Click here for help.</a></p>
-                </Form.Group>
-                {/* Continue with the rest of your form */}
-              </Form>
-              
-            </div>
-            <Container>
-              <Row className="footer-row">
-                <Col className="text-start">
-                  Terms
-                </Col>
-                <Col className="text-end">
-                  friendbuy
-                </Col>
-              </Row>
-              </Container>
-          </div>
-
-        </div>
-      </Modal.Body>
-    </Modal>
-  </>
-);
+      <Modal show={show} onHide={handleClose} size="lg" centered>
+        <Modal.Body className={styles.modalBody}>
+          <Container fluid className={styles.modalContainer}>
+            <Row className={styles.modalRow}>
+              <Col md={6} className={styles.leftCol}>
+                {/* This column is intentionally left empty */}
+              </Col>
+              <Col md={6} className={styles.rightCol}>
+                <button onClick={handleClose} className={styles.closeButton}>&times;</button>
+                <div className={styles.formContainer}>
+                  <h1>Refer a Friend <br />to a Casper Mattress</h1>
+                  <p>Start spreading the snooze. Give a friend 25% off*, and you'll get a $75 Amazon gift card when they buy.</p>
+                  <Form>
+                    <Form.Group controlId="formName">
+                      <Form.Label>Enter your info to start sharing with friends:</Form.Label>
+                      <Form.Control className="mb-2" type="text" placeholder="What's your name?" />
+                      <Form.Control className="mb-3" type="text" placeholder="What's your email?" />
+                      <Button variant="primary" type="submit" className={styles.shareButton}>Start Sharing</Button>
+                    </Form.Group>
+                  </Form>
+                  <p>Have a question about referrals? <a href="#">Click here for help.</a></p>
+                </div>
+                <Container className={styles.footerContainer}>
+                  <Row>
+                    <Col className="text-start">Terms</Col>
+                    <Col className="text-end">friendbuy</Col>
+                  </Row>
+                </Container>
+              </Col>
+            </Row>
+          </Container>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
 };
 
 export default ReferralModal;

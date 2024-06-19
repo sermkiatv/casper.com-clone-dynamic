@@ -1,0 +1,52 @@
+.referButton {
+  cursor: pointer;
+}
+
+.modalBody {
+  display: flex;
+  background-image: url('./assets/images/mobile-mattress.jpg');
+  background-size: auto 100%;
+  background-position: -155px 0;
+}
+
+.modalContainer, .modalRow {
+  height: 100%;
+}
+
+.leftCol {
+  background-color: transparent;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(230, 230, 230);
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.formContainer {
+  padding: 0 10%;
+}
+
+.shareButton {
+  width: 100%;
+  background-color: rgb(15, 26, 84);
+  border: none;
+}
+
+.footerContainer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
