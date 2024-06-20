@@ -21,27 +21,30 @@ const ReferralModal = () => {
       <Modal show={show} onHide={handleClose} size="lg" centered>
         <Modal.Body className={styles.modalBody}>
           <Container fluid className={styles.modalContainer}>
+            
             <Row className={styles.modalRow}>
               <Col md={6} className={styles.leftCol}>
                 {/* This column is intentionally left empty */}
               </Col>
               <Col md={6} className={styles.rightCol}>
-                <button onClick={handleClose} className={styles.closeButton}>&times;</button>
-                <div className={styles.formContainer}>
-                  <h1>Refer a Friend <br />to a Casper Mattress</h1>
-                  <p>Start spreading the snooze. Give a friend 25% off*, and you'll get a $75 Amazon gift card when they buy.</p>
-                  <Form>
-                    <Form.Group controlId="formName">
-                      <Form.Label>Enter your info to start sharing with friends:</Form.Label>
-                      <Form.Control className="mb-2" type="text" placeholder="What's your name?" />
-                      <Form.Control className="mb-3" type="text" placeholder="What's your email?" />
-                      <Button variant="primary" type="submit" className={styles.shareButton}>Start Sharing</Button>
-                    </Form.Group>
-                  </Form>
-                  <p>Have a question about referrals? <a href="#">Click here for help.</a></p>
-                </div>
-                <Container className={styles.footerContainer}>
-                  <Row>
+                <Container className={styles.rightColContainer}>
+                  <Row className={styles.rightColHeader}>
+                    <button onClick={handleClose} className={styles.closeButton}>&times;</button>
+                  </Row>
+                  <Row className={styles.formContainer}>
+                    <h1>Refer a Friend <br />to a Casper Mattress</h1>
+                    <p>Start spreading the snooze. Give a friend 25% off*, and you'll get a $75 Amazon gift card when they buy.</p>
+                    <Form>
+                      <Form.Group controlId="formName">
+                        <Form.Label>Enter your info to start sharing with friends:</Form.Label>
+                        <Form.Control className="mb-2" type="text" placeholder="What's your name?" />
+                        <Form.Control className="mb-3" type="text" placeholder="What's your email?" />
+                        <Button variant="primary" type="submit" className={styles.shareButton}>Start Sharing</Button>
+                      </Form.Group>
+                    </Form>
+                    <p>Have a question about referrals? <a href="#">Click here for help.</a></p>
+                  </Row>
+                  <Row className={styles.rightColFooter}>
                     <Col className="text-start">Terms</Col>
                     <Col className="text-end">friendbuy</Col>
                   </Row>

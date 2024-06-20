@@ -5,12 +5,16 @@
 .modalBody {
   display: flex;
   background-image: url('./assets/images/mobile-mattress.jpg');
-  background-size: auto 100%;
+  background-size: cover;
   background-position: -155px 0;
+  height: 100%;
+  padding: 0;
 }
 
 .modalContainer, .modalRow {
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .leftCol {
@@ -23,21 +27,37 @@
   justify-content: space-between;
   background-color: rgba(230, 230, 230);
   text-align: center;
+  padding: 0;
+}
+
+.rightColContainer {
+  padding: 0;
+}
+
+.rightColHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 60px;
 }
 
 .closeButton {
-  position: absolute;
   top: 0;
-  right: 5px;
+  right: 0;
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 100;
+  line-height: 2rem;
+  padding: 0;
+  width: 40px;
+  height: 40px;
 }
 
 .formContainer {
-  padding: 0 10%;
+  padding: 37px;
 }
 
 .shareButton {
@@ -46,7 +66,7 @@
   border: none;
 }
 
-.footerContainer {
+.rightColFooter {
   margin-top: 0;
   margin-bottom: 0;
 }
